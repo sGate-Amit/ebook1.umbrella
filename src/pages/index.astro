@@ -14,15 +14,22 @@
    .bulletList-ZZKRB4BcE7 ul li h2{font-size:18px;line-height:1.3em;font-weight:400;}
    .bulletList-ZZKRB4BcE7 ul li p strong{font-weight:800;}
    
+.text-output ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+}
+
 .text-output ul li {
-  list-style: none;
   position: relative;
-  padding-left: 30px;
+  padding-left: 32px; /* Make space for the icon */
+  margin-bottom: 8px;
 }
 
 .text-output ul li::before {
-   background-image: url('https://ebook1umbrella.sales-c4c.workers.dev/bul-icon.png') no-repeat;
- 
+  content: "";
+  background-image: url('https://ebook1umbrella.sales-c4c.workers.dev/bul-icon.png');
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
   width: 24px;
   height: 24px;
   position: absolute;
